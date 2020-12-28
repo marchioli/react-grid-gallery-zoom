@@ -1,0 +1,45 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.imageViewerHeaderButton {
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.imageViewerFooter {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+}
+
+.desktop__only__button {
+  display: none;
+}
+
+@media (min-width: 1200px) {
+  .imageViewerFooter {
+    left: 50% !important;
+    margin-left: -300px;
+    width: 600px !important;
+  }
+
+  .desktop__only__button {
+    display: unset;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .ImageStyleCss {
+    left: 50% !important;
+    margin-left: -300px;
+    width: 600px !important;
+  }
+}
